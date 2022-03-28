@@ -1,7 +1,10 @@
-<div *ngFor="let user of users; index as i">
-
-  <p>{{i + 1}} . <img src="{{user.profilePhotoUrl}}" alt="" width="50px" height="50px"> <strong> {{user.name}}
-      {{user.surname}} </strong> {{user.age}}
-    {{user.address.city}} </p>
-
+<div *ngFor="let user of users; index as i; let myIndex=index;">
+  <div>
+    <p>{{i + 1}} . <img src="{{user.profilePhotoUrl}}" alt="" width="50px" height="50px"> <strong> {{user.name}}
+        {{user.surname}} </strong> {{user.age}}
+      {{user.address.city}} </p>
+  </div>
+  <div>
+    <button (click)="removeItem(myIndex)"> Delete</button>
+  </div>
 </div>

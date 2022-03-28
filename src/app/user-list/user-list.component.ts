@@ -7,9 +7,12 @@ import { User, Role , Gender, Address } from '../models/User';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+ 
+  removeItem(index: number){
 
-  constructor() { }
+    this.users.splice(index, 1);
 
+  }
   ngOnInit(): void {
   }
  
@@ -65,4 +68,7 @@ export class UserListComponent implements OnInit {
     
     
   }]
+  
+
+
 }
