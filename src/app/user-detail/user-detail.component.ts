@@ -15,7 +15,7 @@ export class UserDetailComponent implements OnInit {
       name: 'Mario',
       surname: 'Rossi',
       age: 25,
-      dateOfBirth: '1995-14-12',
+      dateOfBirth: '1995-12-14',
       address: {
           city: 'Roma',
           street: 'Via roma 10',
