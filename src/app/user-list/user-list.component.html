@@ -1,7 +1,7 @@
-<div *ngFor="let user of users; index as i">
 
-  <p>{{i + 1}} . <img src="{{user.profilePhotoUrl}}" alt="" width="50px" height="50px"> <strong> {{user.name}}
-      {{user.surname}} </strong> {{user.age}}
-    {{user.address.city}} </p>
-
+<div *ngIf="users">
+  <div *ngFor="let user of users; index as i">
+    <p>{{i + 1}}</p> 
+    <angapp-user-single [user]= user ></angapp-user-single>
+  </div>
 </div>
