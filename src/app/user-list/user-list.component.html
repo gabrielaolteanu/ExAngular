@@ -1,6 +1,10 @@
-<div *ngIf="users">
+<div *ngIf="users.length > 0; else noUsers">
   <div *ngFor="let user of users; index as i">
     <p>{{i + 1}}</p>
     <angapp-user-single [user]=user (deleteEvent)="deleteButton($event)"></angapp-user-single>
   </div>
 </div>
+
+<ng-template #noUsers>
+  <p>Non ci sono Utenti</p>
+</ng-template>
