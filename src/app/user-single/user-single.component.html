@@ -1,7 +1,8 @@
 <div class="cont">
-    <img src="{{user.profilePhotoUrl}}" alt="" height="50" width="50">
-    <p>{{user.name}}</p>
-    <p>{{user.surname}}</p>
-    <p>{{user.age}}</p>
-    <p>{{user.address.city}}</p>
+  <img src="{{user.profilePhotoUrl}}" alt="" height="50" width="50">
+  <p>{{user.name}}</p>
+  <p>{{user.surname}}</p>
+  <p>{{user.age}}</p>
+  <p>{{user.address.city}}</p>
+  <button (click)="callParent()">Delete</button>
 </div>
