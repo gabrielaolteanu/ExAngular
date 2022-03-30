@@ -1,3 +1,8 @@
-<div *ngIf="user">
-
+<div class="cont" *ngIf="user">
+  <p><img src="{{user.profilePhotoUrl}}" alt="" height="50" width="50"></p>
+  <p><b> {{user.name}}</b></p>
+  <p><b>{{user.surname}}</b></p>
+  <p>{{user.age}}</p>
+  <p>{{user.address.city}}</p>
+  <button (click)="callParent()" class="btn btn-primary">Delete</button>
 </div>
