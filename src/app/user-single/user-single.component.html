@@ -1,4 +1,4 @@
-<div class="cont">
+<div class="cont" [ngClass]="{'border-staff': user.role ==  'staff', 'border-manager': user.role == 'manager', 'border-admin': user.role == 'admin'}">
   <p><img src="{{user.profilePhotoUrl}}" alt="" height="50" width="50"></p>
   <p><b> {{user.name}}</b></p>
   <p><b>{{user.surname}}</b></p>
