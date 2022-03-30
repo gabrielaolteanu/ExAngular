@@ -1,8 +1,16 @@
-*{
-    box-sizing: border-box;
+.cont {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  margin-top: -70px;
 }
 
-.cont{
-    display: flex;
-    margin: 10px;
+p {
+  margin: 2px;
+  margin-right: 7px;
+
+}
+
+.btn {
+  width: 100px;
 }

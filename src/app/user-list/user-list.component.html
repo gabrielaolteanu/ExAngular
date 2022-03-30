@@ -1,6 +1,6 @@
 <div *ngIf="users.length > 0; else noUsers">
   <div *ngFor="let user of users; index as i">
-    <p>{{i + 1}}</p>
+    <div id="counter">{{i + 1}}</div>
     <angapp-user-single [user]=user (deleteEvent)="deleteButton($event)"></angapp-user-single>
   </div>
 </div>
