@@ -1,7 +1,7 @@
-
 <div *ngIf="users">
   <div *ngFor="let user of users; index as i">
-    <p>{{i + 1}}</p> 
-    <angapp-user-single [user]= user ></angapp-user-single>
+
+    <div id="counter">{{i + 1}}</div>
+    <angapp-user-single [user]=user id="single"></angapp-user-single>
   </div>
 </div>
