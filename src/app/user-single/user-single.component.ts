@@ -10,8 +10,9 @@ import { User } from '../models/User';
 export class UserSingleComponent implements OnInit {
   @Input() user!: User
   @Output() deleteEvent= new EventEmitter()
+  @Input() index= 0;
   callParent(){
-    this.deleteEvent.emit();
+    this.deleteEvent.emit(this.index);
   }
   constructor() { }
 
