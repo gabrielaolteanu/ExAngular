@@ -66,5 +66,6 @@ export class UserListComponent implements OnInit {
 
   deleteButton(index: number){
     this.users.splice(index, 1)
+    console.log(index)
   }
 }
