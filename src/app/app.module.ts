@@ -10,6 +10,7 @@ import { UserSingleComponent } from './componenti/user-single/user-single.compon
 import { OrderListComponent } from './componenti/order-list/order-list.component';
 import { OrderSingleComponent } from './componenti/order-single/order-single.component';
 import { OrderDetailComponent } from './componenti/order-detail/order-detail.component';
+import { AppRoutingModule } from './componenti/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OrderDetailComponent } from './componenti/order-detail/order-detail.com
     OrderDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
