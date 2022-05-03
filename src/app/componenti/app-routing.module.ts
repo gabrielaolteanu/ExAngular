@@ -8,8 +8,9 @@ const routes: Routes= [
     {path: "order", component: OrderContainerComponent}
 ]
 @NgModule({
-
+imports: [RouterModule.forRoot(routes)],
+exports: [RouterModule]
 })
 export class AppRoutingModule {
 
-}
+} 

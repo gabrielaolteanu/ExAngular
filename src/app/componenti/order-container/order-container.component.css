@@ -1,8 +1,8 @@
-.c-rosa{
-    background: pink;
+.area {
+  width: 100vw;
+  height: 100vh;
 }
 
-.area{
-    width: 41vw;
-    height: 80vh;
+.c-rosa {
+  background: pink;
 }
